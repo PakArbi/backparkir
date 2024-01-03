@@ -121,12 +121,6 @@ func CreateResponse(status bool, message string, data interface{}) Response {
     }
 }
 
-func GetOneParkiranData(mongoconn *mongo.Database, colname, Pkrid string) (dest Parkiran) {
-	filter := bson.M{"parkiranid": Pkrid}
-	dest = atdb.GetOneDoc[Parkiran](mongoconn, colname, filter)
-	return
-}
-
 // SaveQRCodeToMongoDB simulates the function to save the generated QR code to MongoDB
 func SaveQRCodeToMongoDB(database *mongo.Database, collectionName string, qrCode []byte) error {
     collection := database.Collection(collectionName)
