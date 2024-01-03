@@ -13,7 +13,7 @@ import (
 func TestParkiran(t *testing.T) {
 	mconn := SetConnection("MONGOSTRING", "PakArbi")
 	var parkirandata Parkiran
-	parkirandata.Parkiranid = "1"
+	parkirandata.ParkiranId = "1"
 	parkirandata.Nama = "Farhan Rizki Maulana"
 	parkirandata.NPM = "1214020"
 	parkirandata.Prodi = "D4 Teknik Informatika"

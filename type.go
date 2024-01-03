@@ -9,9 +9,13 @@ type ResponseBack struct {
 }
 
 type ResponseParkiran struct {
-	Status  int         `json:"status"`
-	Message string      `json:"message"`
-	Data    Parkiran  	`json:"data"`
+	Status  bool     `json:"status"`
+	Message string   `json:"message"`
+	Data    Parkiran `json:"data"`
+}
+
+type RequestParkiran struct {
+	Parkiranid string `json:"parkiranid"`
 }
 
 type Notifikasi struct {
@@ -31,7 +35,7 @@ type Parkiran struct {
 	ParkiranId     int                `json:"parkiranid" bson:"parkiranid"`
 	Nama           string             `json:"nama" bson:"nama"`
 	NPM            string             `json:"npm" bson:"npm"`
-	Jurusan        string             `json:"jurusan" bson:"jurusan"`
+	Prodi        string             `json:"prodi" bson:"prodi"`
 	NamaKendaraan  string             `json:"namakendaraan" bson:"namakendaraan"`
 	NomorKendaraan string             `bson:"nomorkendaraan,omitempty" json:"nomorkendaraan,omitempty"`
 	JenisKendaraan string             `json:"jeniskendaraan,omitempty" bson:"jeniskendaraan,omitempty"`
@@ -49,9 +53,9 @@ type Response struct {
 	Data    interface{} `json:"data" bson:"data"`
 }
 
-type Jurusan struct {
-	JurusanId     int 	`json:"jurusanid" bson:"jurusanid,omitempty"`
-	JurusanName    string 	`json:"jurusanname" bson:"jurusanname,omitempty"`
+type Prodi struct {
+	ProdiId     int 	`json:"prodiid" bson:"prodiid,omitempty"`
+	ProdiName    string 	`json:"prodiname" bson:"prodiname,omitempty"`
 }
 
 
@@ -59,9 +63,9 @@ type Updated struct {
 	Message string `json:"message"`
 }
 
-type RequestParkiran struct {
-	Username string `json:"username" bson:"username,omitempty"`
-	Npm      string `json:"npm" bson:"npm,omitempty"`
-	Email    string `json:"email" bson:"email,omitempty"`
-	Message  string `json:"message,omitempty" bson:"message,omitempty"`
-}
+// type RequestParkiran struct {
+// 	Username string `json:"username" bson:"username,omitempty"`
+// 	Npm      string `json:"npm" bson:"npm,omitempty"`
+// 	Email    string `json:"email" bson:"email,omitempty"`
+// 	Message  string `json:"message,omitempty" bson:"message,omitempty"`
+// }
