@@ -7,7 +7,7 @@ import (
 
 
 func TestParkiran(t *testing.T) {
-	mconn, err := SetConnection("MONGOSTRING", "PakArbiCoba")
+	mconn, err := SetConnection("MONGOSTRING", "PakArbi")
 	if err != nil {
 		t.Fatalf("Error connecting to MongoDB: %v", err)
 	}
@@ -31,7 +31,7 @@ func TestParkiran(t *testing.T) {
 }
 
 func TestAllParkiran(t *testing.T) {
-	mconn, err := SetConnection("MONGOSTRING", "PakArbiCoba")
+	mconn, err := SetConnection("MONGOSTRING", "PakArbi")
 	if err != nil {
 		t.Fatalf("Error connecting to MongoDB: %v", err)
 	}
