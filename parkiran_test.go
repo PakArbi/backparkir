@@ -13,10 +13,10 @@ func TestParkiran(t *testing.T) {
 	}
 
 	var parkirandata = Parkiran{
-		ParkiranId:     1,
-		Nama:           "Muhammad Faisal Ash",
+		ParkiranId:     2,
+		Nama:           "Farhan Rizki Maulana",
 		NPM:            "1214020",
-		Jurusan:        "D4 Teknik Informatika",
+		Prodi:        "D4 Teknik Informatika",
 		NamaKendaraan:  "Supra X 125",
 		NomorKendaraan: "F 1234 NR",
 		JenisKendaraan: "Motor",
