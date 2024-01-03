@@ -45,3 +45,35 @@ func TestAllParkiran(t *testing.T) {
 		fmt.Println(p)
 	}
 }
+
+
+// func TestGenerateQRCode(t *testing.T) {
+// 	formData := FormData{
+// 		NamaLengkap:    "Farhan Rizki Maulana",
+// 		NPM:            "1214020",
+// 		Jurusan:        "D4 Teknik Informatika",
+// 		NamaKendaraan:  "Supra X 125",
+// 		NomorKendaraan: "F 1234 NR",
+// 		JenisKendaraan: "Motor",
+// 	}
+
+// 	err := GenerateQRCode(formData)
+// 	if err != nil {
+// 		t.Errorf("Failed to generate QR code: %v", err)
+// 	}
+
+// 	// Check if QR code file exists
+// 	if _, err := os.Stat("qrcode.png"); os.IsNotExist(err) {
+// 		t.Errorf("QR code file does not exist: %v", err)
+// 	}
+
+// 	// Check if JSON data is generated correctly
+// 	dataJSON, _ := json.Marshal(formData)
+
+// 	expectedJSON := `{"namalengkap":"Farhan Rizki Maulana","npm":"1214020","jurusan":"D4 Teknik Informatika","namakendaraan":"Supra X 125","nomorkendaraan":"F 1234 NR","jeniskendaraan":"Motor"}`
+
+// 	// Validate JSON data
+// 	if string(dataJSON) != expectedJSON {
+// 		t.Errorf("Incorrect JSON data generated")
+// 	}
+// }
